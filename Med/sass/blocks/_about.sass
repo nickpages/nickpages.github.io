@@ -1,0 +1,38 @@
+.about
+    &-block
+        margin-left: 100px
+        width: 80%
+    &-text
+        &__title
+            position: relative
+            z-index: -1
+            text-transform: uppercase
+        &__title::after
+            content: ''
+            position: absolute
+            width: 150px
+            height: 3px
+            bottom: 0
+            left: 0
+            border-bottom: 3px solid $main-color
+        &__info
+            margin-top: 50px
+        .info
+            margin-bottom: 50px
+        .info-item
+            display: flex
+            margin-bottom: 50px
+            line-height: 1.8
+            .leftAlign
+                margin-right: 50px
+                font-weight: bold
+
+@media (max-width: 768px)
+    .about
+        &-block
+            margin-left: 0
+            width: 100%
+@media (max-width: 768px)
+    .about
+        &-text
+            font-size: 14px
